@@ -1,6 +1,5 @@
 (executable
   (name Hello)
   (public_name Hello.exe)
-  (libraries jsoo-is-sorted)
   (preprocess (pps js_of_ocaml-ppx))
 )

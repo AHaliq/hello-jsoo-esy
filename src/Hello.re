@@ -19,6 +19,7 @@ let log = (title, data) =>
     [|title |> Js.string |> Js.Unsafe.inject, data |> Js.Unsafe.inject|],
   );
 
+/* test*/
 /* Compiled to nested array with [0, value1, [0, value2, [0, value3, 0]]] */
 let list = [1, 2, 3, 4, 5];
 /* Compiled to array but with an additional `0` added at the first position*/
@@ -96,8 +97,4 @@ log("obj property", dataProp);
 log("obj2", obj2);
 log("record", someRecord);
 
-/* Using a JavaScript library */
-log("isSorted", IsSorted.isSorted);
-
-let isSorted2 = IsSorted.isSorted([|20, 3, 124|]);
-log("isSorted2", isSorted2);
+ReactDOMRe.renderToElementWithId(<Component1 message="Hello!" />, "app");
